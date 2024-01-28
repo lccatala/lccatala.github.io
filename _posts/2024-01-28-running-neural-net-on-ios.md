@@ -153,8 +153,8 @@ mlmodel.user_defined_metadata['com.apple.coreml.model.preview.params'] = json.du
 mlmodel.save('SegmentationModel_with_metadata.mlmodel')
 ```
 
-And that's it for the conversion! As a sanity check, this is what your original and segmented images might look like:
-![Cat and dog, original and segmented images](/images/cat_and_dog_original_segmented.jpg)
+And that's it for the conversion! This is what your original and segmented images might look like:
+![Cat and dog, original and segmented images](/images/cat_dog_original_segmented.jpg)
 
 ## Running the model from Xcode
 Lastly, import the model to whatever Xcode project you want by dragging it into the file view.
