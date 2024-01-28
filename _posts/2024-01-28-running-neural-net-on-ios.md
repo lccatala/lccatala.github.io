@@ -153,5 +153,15 @@ mlmodel.user_defined_metadata['com.apple.coreml.model.preview.params'] = json.du
 mlmodel.save('SegmentationModel_with_metadata.mlmodel')
 ```
 
-And that's it! As a sanity check, this is what your original and segmented images might look like:
+And that's it for the conversion! As a sanity check, this is what your original and segmented images might look like:
 ![Cat and dog, original and segmented images](../images/cat_and_dog_original_segmented.jpg)
+
+## Running the model from Xcode
+Lastly, import the model to whatever Xcode project you want by dragging it into the file view.
+![MLModel in Xcode project](../images/mlmodel_in_xcode_project.png)
+
+You can run inference from the IDE:
+1. In the Preview tab, drag the image you want to use to the `Drag or add files` column.
+![MLModel preview in Xcode](../images/mlmodel_xcode_preview.png)
+2. You'll see the model's output appear in the central area.
+![MLModel inference in Xcode](../images/mlmodel_inference_xcode.png)
